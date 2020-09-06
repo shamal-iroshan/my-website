@@ -1,0 +1,705 @@
+@media all and (max-width: 320px){
+    .header-width{
+        display: none;
+    }
+    .fas{
+        color: white !important;
+    }
+    #mobile-nav{
+        display: block;
+        margin: 20px;
+        width: 50px;
+        z-index: 999;
+    }
+    /*    /////////////////////////////////   */
+    .home-images::after {
+        display: none;
+    }
+    #home-container {
+        top: 10%;
+    }
+    #me-home {
+        width: 96%;
+        height: 37%;
+    }
+    #home-container > div > h3{
+        font-size: 72px;
+        width: 90%;
+        padding: 0 5%;
+    }
+    #home-container > div > span::before {
+        display: none;
+    }
+    #social-links {
+        display: none;
+    }
+    #home-grid {
+        display: none;
+    }
+    /*    /////////////////////////////////   */
+    #ab{
+        padding-top: 0;
+        height: 1000px;
+    }
+    #about-large-title{
+        display: none;
+    }
+    #about-top-container{
+        display: block;
+        width: 90%;
+        padding: 7% 4%;
+        text-align: center;
+    }
+    #about-grid{
+        display: none;
+    }
+    #my-pic{
+        padding-top: 50px;
+    }
+    #my-pic>img{
+        width: 95%;
+    }
+    #about-buttons {
+        display: inline-grid;
+    }
+    #about-buttons > a{
+        margin-bottom: 20px;
+    }
+    /*    /////////////////////////////////   */
+    .service-details{
+        display: block;
+        width: 70%;
+        padding: 0 15%;
+    }
+    .service-detail{
+        padding: 0;
+        width: 100%;
+        height: 250px;
+    }
+    /*    /////////////////////////////////   */
+    #work-image-row-1{
+        display: block;
+    }
+    #work-image-row-1 > img:nth-child(1){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-1 > img:nth-child(2){
+        width: 100%;
+    }
+    #work-image-row-2{
+        display: block;
+    }
+    #work-image-row-2 > img:nth-child(1){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-2 > img:nth-child(2){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-2 > img:nth-child(3){
+        width: 100%;
+    }
+    /*    /////////////////////////////////   */
+    #footer-container{
+        display: block;
+        text-align: center;
+        width: 96%;
+        padding: 0 2%;
+    }
+    #footer-menu > ul > li {
+        list-style: none;
+        display: block;
+        margin-top: 20px;
+    }
+    #footer-social{
+        text-align: center;
+    }
+    #copyright-text{
+        width: 80%;
+        padding: 0 10%;
+    }
+}
+
+@media all and (min-width: 321px) and (max-width: 375px){
+    .header-width{
+        display: none;
+    }
+    .fas{
+        color: white !important;
+    }
+    #mobile-nav{
+        display: block;
+        margin: 20px;
+        width: 50px;
+        z-index: 999;
+    }
+    /*    /////////////////////////////////   */
+    .home-images::after {
+        display: none;
+    }
+    #home-container {
+        top: 10%;
+    }
+    #me-home {
+        width: 315px;
+        height: 335px;
+    }
+    #home-container > div > h3{
+        font-size: 72px;
+        width: 90%;
+        padding: 0 5%;
+    }
+    #home-container > div > span::before {
+        display: none;
+    }
+    #social-links {
+        display: none;
+    }
+    #home-grid {
+        display: none;
+    }
+    /*    /////////////////////////////////   */
+    #ab{
+        padding-top: 0;
+        height: 1000px;
+    }
+    #about-large-title{
+        display: none;
+    }
+    #about-top-container{
+        display: block;
+        width: 90%;
+        padding: 7% 4%;
+        text-align: center;
+    }
+    #about-grid{
+        display: none;
+    }
+    #my-pic{
+        padding-top: 50px;
+    }
+    #my-pic>img{
+        width: 295px;
+    }
+    /*    /////////////////////////////////   */
+    .service-details{
+        display: block;
+        width: 70%;
+        padding: 0 15%;
+    }
+    .service-detail{
+        padding: 0;
+        width: 100%;
+        height: 250px;
+    }
+    /*    /////////////////////////////////   */
+    #work-image-row-1{
+        display: block;
+    }
+    #work-image-row-1 > img:nth-child(1){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-1 > img:nth-child(2){
+        width: 100%;
+    }
+    #work-image-row-2{
+        display: block;
+    }
+    #work-image-row-2 > img:nth-child(1){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-2 > img:nth-child(2){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-2 > img:nth-child(3){
+        width: 100%;
+    }
+    /*    /////////////////////////////////   */
+    #footer-container{
+        display: block;
+        text-align: center;
+        width: 96%;
+        padding: 0 2%;
+    }
+    #footer-menu > ul > li {
+        list-style: none;
+        display: block;
+        margin-top: 20px;
+    }
+    #footer-social{
+        text-align: center;
+    }
+    #copyright-text{
+        width: 80%;
+        padding: 0 10%;
+    }
+
+}
+
+@media all and (min-width: 376px) and (max-width: 425px) {
+    .header-width{
+        display: none;
+    }
+    .fas{
+        color: white !important;
+    }
+    #mobile-nav{
+        display: block;
+        margin: 20px;
+        width: 50px;
+        z-index: 999;
+    }
+    /*    /////////////////////////////////   */
+    .home-images::after {
+        display: none;
+    }
+    #home-container {
+        top: 10%;
+    }
+    #me-home {
+        width: 370px;
+        height: 405px;
+    }
+    #home-container > div > h3{
+        font-size: 72px;
+        width: 90%;
+        padding: 0 5%;
+    }
+    #home-container > div > span::before {
+        display: none;
+    }
+    #social-links {
+        display: none;
+    }
+    #home-grid {
+        display: none;
+    }
+    /*    /////////////////////////////////   */
+    #ab{
+        padding-top: 0;
+        height: 1000px;
+    }
+    #about-large-title{
+        display: none;
+    }
+    #about-top-container{
+        display: block;
+        width: 90%;
+        padding: 7% 4%;
+        text-align: center;
+    }
+    #about-grid{
+        display: none;
+    }
+    #my-pic{
+        padding-top: 50px;
+    }
+    #my-pic>img{
+        width: 350px;
+    }
+    /*    /////////////////////////////////   */
+    .service-details{
+        display: block;
+        width: 70%;
+        padding: 0 15%;
+    }
+    .service-detail{
+        padding: 0;
+        width: 100%;
+        height: 250px;
+    }
+    /*    /////////////////////////////////   */
+    #work-image-row-1{
+        display: block;
+    }
+    #work-image-row-1 > img:nth-child(1){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-1 > img:nth-child(2){
+        width: 100%;
+    }
+    #work-image-row-2{
+        display: block;
+    }
+    #work-image-row-2 > img:nth-child(1){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-2 > img:nth-child(2){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-2 > img:nth-child(3){
+        width: 100%;
+    }
+    /*    /////////////////////////////////   */
+    #footer-container{
+        display: block;
+        text-align: center;
+        width: 96%;
+        padding: 0 2%;
+    }
+    #footer-social{
+        text-align: center;
+    }
+    #copyright-text{
+        width: 80%;
+        padding: 0 10%;
+    }
+
+}
+
+@media all and (min-width: 426px) and (max-width: 599px){
+    .header-width{
+        display: none;
+    }
+    .fas{
+        color: white !important;
+    }
+    #mobile-nav{
+        display: block;
+        margin: 20px;
+        width: 50px;
+        z-index: 999;
+    }
+    /*    /////////////////////////////////   */
+    .home-images::after {
+        display: none;
+    }
+    #home-container {
+        top: 10%;
+    }
+    #me-home {
+        width: 380px;
+        height: 410px;
+    }
+    #home-container > div > span::before {
+        display: none;
+    }
+    #social-links {
+        display: none;
+    }
+    #home-grid {
+        display: none;
+    }
+    /*    /////////////////////////////////   */
+    #ab{
+        padding-top: 0;
+        height: 1000px;
+    }
+    #about-large-title{
+        display: none;
+    }
+    #about-top-container{
+        display: block;
+        width: 90%;
+        padding: 7% 4%;
+        text-align: center;
+    }
+    #about-grid{
+        display: none;
+    }
+    #my-pic{
+        padding-top: 50px;
+    }
+    #my-pic>img{
+        width: 400px;
+    }
+    /*    /////////////////////////////////   */
+    .service-details{
+        display: block;
+        width: 70%;
+        padding: 0 15%;
+    }
+    .service-detail{
+        padding: 0;
+        width: 100%;
+        height: 250px;
+    }
+    /*    /////////////////////////////////   */
+    #work-image-row-1{
+        display: block;
+    }
+    #work-image-row-1 > img:nth-child(1){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-1 > img:nth-child(2){
+        width: 100%;
+    }
+    #work-image-row-2{
+        display: block;
+    }
+    #work-image-row-2 > img:nth-child(1){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-2 > img:nth-child(2){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-2 > img:nth-child(3){
+        width: 100%;
+    }
+    /*    /////////////////////////////////   */
+    #footer-container{
+        display: block;
+        text-align: center;
+        width: 90%;
+        padding: 0 5%;
+    }
+    #footer-social{
+        text-align: center;
+    }
+    #copyright-text{
+        width: 80%;
+        padding: 0 10%;
+    }
+
+}
+
+@media all and (min-width: 600px) and (max-width: 768px){
+    .header-width{
+        display: none;
+    }
+    .fas{
+        color: white !important;
+    }
+    #mobile-nav{
+        display: block;
+        margin: 20px;
+        width: 50px;
+        z-index: 999;
+    }
+    /*    /////////////////////////////////   */
+    .home-images::after {
+        display: none;
+    }
+    #home-container {
+        top: 10%;
+    }
+    #me-home {
+        width: 380px;
+        height: 410px;
+    }
+    #home-container > div > span::before {
+        display: none;
+    }
+    #social-links {
+        right: 50px;
+        top: 60%;
+    }
+    #home-grid {
+        display: none;
+    }
+    /*    /////////////////////////////////   */
+    #ab{
+        padding-top: 0;
+        height: 1000px;
+    }
+    #about-large-title{
+        display: none;
+    }
+    #about-top-container{
+        display: block;
+        width: 90%;
+        padding: 7% 4%;
+        text-align: center;
+    }
+    #about-grid{
+        display: none;
+    }
+    #my-pic{
+        padding-top: 50px;
+    }
+    /*    /////////////////////////////////   */
+    .service-details{
+        display: block;
+        width: 70%;
+        padding: 0 15%;
+    }
+    .service-detail{
+        padding: 0;
+        width: 100%;
+        height: 250px;
+    }
+    /*    /////////////////////////////////   */
+    #work-image-row-1{
+        display: block;
+    }
+    #work-image-row-1 > img:nth-child(1){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-1 > img:nth-child(2){
+        width: 100%;
+    }
+    #work-image-row-2{
+        display: block;
+    }
+    #work-image-row-2 > img:nth-child(1){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-2 > img:nth-child(2){
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    #work-image-row-2 > img:nth-child(3){
+        width: 100%;
+    }
+    /*    /////////////////////////////////   */
+    #footer-container{
+        display: block;
+        text-align: center;
+    }
+    #footer-social{
+        text-align: center;
+    }
+
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px){
+    .header-width{
+        padding: 20px 10px;
+    }
+    .logo {
+        width: 10%;
+    }
+
+    .menu {
+        width: 70%;
+        text-align: center;
+    }
+
+    .cont {
+        width: 20%;
+        text-align: right;
+    }
+    /*    /////////////////////////////////   */
+    .home-images::after {
+        display: none;
+    }
+    #me-home {
+         width: 480px;
+         height: 510px;
+     }
+    #home-container {
+        top: 10%;
+    }
+    #home-container > div > span::before {
+        display: none;
+    }
+    #home-container > div > h3{
+        font-size: 50px;
+    }
+    #home-grid {
+         right: 3%;
+         bottom: 0;
+     }
+    #social-links {
+          right: 50px;
+      }
+
+
+    /*    /////////////////////////////////   */
+    #about-large-title{
+        display: none;
+    }
+    #my-pic > img{
+        width: 330px;
+    }
+    #about-top-container {
+        width: 71%;
+        padding: 7% 13%;
+    }
+    #about-grid > img{
+        width: 150px;
+    }
+    #about-buttons > a {
+        width: 75px;
+        margin-bottom: 20px;
+    }
+    #ab {
+        opacity: 1;
+        position: relative;
+        padding-top: 75px;
+        height: 585px;
+    }
+    /*    /////////////////////////////////   */
+    #foot {
+        height: 147px;
+    }
+    #footer-top {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    #footer-container {
+        width: 90%;
+        padding: 0 5%;
+    }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1199px) {
+    .header-width{
+        padding: 20px 20px;
+    }
+    /*    /////////////////////////////////   */
+    #home-container > div > span::before {
+        display: none;
+    }
+    #home-container {
+        top: 10%;
+    }
+    #home-grid {
+        right: 7%;
+    }#me-home {
+         width: 530px;
+         height: 580px;
+     }
+    /*    /////////////////////////////////   */
+    #my-pic > img{
+        width: 330px;
+    }
+    #about-large-title {
+         top: 8%;
+     }
+
+}
+
+@media all and (min-width: 1200px) and (max-width: 1440px) {
+    .header-width{
+        padding: 20px 50px;
+    }
+    .logo {
+        width: 20%;
+    }
+
+    .menu {
+        width: 60%;
+        text-align: center;
+    }
+
+    .cont {
+        width: 20%;
+        text-align: right;
+    }
+/*    /////////////////////////////////   */
+    #home-container > div > span::before {
+        display: none;
+    }
+}
+
+@media all and (min-width: 2560px){
+
+}
+
+@media print {
+
+}

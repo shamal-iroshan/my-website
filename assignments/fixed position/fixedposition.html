@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed position</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        #outer-circle {
+            width: 400px;
+            height: 400px;
+            border: solid red 20px;
+            border-radius: 100%;
+            position: fixed;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #inner-circle {
+            width: 360px;
+            height: 360px;
+            border: solid blue 20px;
+            border-radius: 100%;
+            position: fixed;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .content-circle {
+            width: 362px;
+            height: 362px;
+            background: gray;
+            border-radius: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #first-text {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            color: white;
+            width: max-content;
+            height: max-content;
+        }
+        .content-circle2 {
+            width: 362px;
+            height: 362px;
+            background: coral;
+            border-radius: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #second-text {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            color: white;
+            width: max-content;
+            height: max-content;
+        }
+        .content-circle3 {
+            width: 362px;
+            height: 362px;
+            background: indianred;
+            border-radius: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #third-text {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            color: white;
+            width: max-content;
+            height: max-content;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<section>
+    <div class="content-circle">
+        <h1 id="first-text">Welcome.</h1>
+    </div>
+</section>
+
+<section>
+    <div class="content-circle2">
+        <h1 id="second-text">To.</h1>
+    </div>
+</section>
+
+<section>
+    <div class="content-circle3">
+        <h1 id="third-text">IJSE.</h1>
+    </div>
+</section>
+
+<div id="outer-circle">
+    <div id="inner-circle">
+
+    </div>
+</div>
+
+</body>
+</html>

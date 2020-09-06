@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175813532-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-175813532-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My works</title>
+
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/loading.css?v=1">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/my-works.css">
+</head>
+<body>
+<div class="loader">
+    <div class="loading">
+        <span>Loading...</span>
+    </div>
+</div>
+
+<main>
+    <div class="bg-lines hidden">
+        <svg>
+            <line x1="20%" y1="100%" x2="80%" y2="0"/>
+            <line x1="80%" y1="100%" x2="20%" y2="0"/>
+        </svg>
+    </div>
+
+    <header id="header-area">
+
+        <div id="logo">
+            <a href="index.html">
+                <img src="img/my-works/logo-black.png" alt="" id="logo-black">
+                <img src="img/my-works/logo-white.png" alt="" id="logo-white">
+            </a>
+        </div>
+
+        <h2 class="menu-info" id="project-name">
+            Project 01
+        </h2>
+
+        <div id="burger">
+            <div id="burger-circle"></div>
+            <div id="burger-menu">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+    </header>
+
+
+    <section id="image-holder">
+        <div id="images">
+            <img src="img/work-area/work1.jpg" alt="" id="image">
+        </div>
+    </section>
+
+
+    <footer>
+        <div id="footer-container">
+            <div id="back" onclick="goBack()"><i class="fas fa-angle-left fa-2x"></i></div>
+            <div id="next" onclick="goForward()"><i class="fas fa-angle-right fa-2x"></i></div>
+        </div>
+    </footer>
+
+</main>
+
+<script src="js/loader.js"></script>
+<script src="js/my-works.js"></script>
+<script>
+    var projectName = ['Project 01','Project 02','Project 03','Project 04','Project 05'];
+</script>
+</body>
+</html>

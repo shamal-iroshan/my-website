@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System</title>
+    <!-- <link rel="stylesheet" href="css/sb-admin-2.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-5">POS</a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active" id="dash-nav">
+                        <a class="nav-link ml-5" onclick="showDashboard()">Dashboard <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item" id="order-nav">
+                        <a class="nav-link" onclick="showOrders()">Orders <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item" id="item-nav">
+                        <a class="nav-link" onclick="showItems()">Items <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item" id="customer-nav">
+                        <a class="nav-link" onclick="showCustomers()">Customer <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </section>
+
+    <section id="customers">
+        <section class="form-row container-fluid mt-5">
+
+            <section class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <!-- <form> -->
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <input type="text" class="form-control" id="customer-id" placeholder="Customer ID">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <button type="submit" class="btn btn-outline-primary">Search</button>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="firstName">First name</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="lastName">Last name</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Address">Address</label>
+                    <input type="text" class="form-control" id="Address">
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact No</label>
+                    <input type="text" class="form-control" id="contact">
+                </div>
+
+                <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group btn-group-lg" role="group" aria-label="First group">
+                        <button type="submit" class="btn btn-success" id="cusSave">Save</button>
+                        <button type="submit" class="btn btn-warning">Update</button>
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="btn btn-secondary p-2" id="cusClear">Clear</button>
+                    </div>
+                </div>
+                <!-- </form> -->
+            </section>
+
+            <section class="form-group  col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 card" style="overflow: hidden;">
+                <table class="table  table-hover mt-3" id="cusTable">
+                    <thead>
+                        <tr class="bg-primary text-light">
+                            <th scope="col">ID</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Contact</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-light" id="cusTableBody">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>0755683495</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>0763408157</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twi</td>
+                            <td>0712576381</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+
+        </section>
+    </section>
+
+    <section id="items">
+        <section class="form-row container-fluid mt-5">
+
+            <section class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <!-- <form> -->
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <input type="text" class="form-control" id="item-id" placeholder="Item ID">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <button type="submit" class="btn btn-outline-primary">Search</button>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" id="Name">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="qty">Quantity</label>
+                        <input type="number" class="form-control" id="qty">
+                    </div>
+                </div>
+                <div class="form-row col-md-5">
+                    <label for="price">Price</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">LKR</div>
+                        </div>
+                        <input type="number" class="form-control" id="price">
+                    </div>
+                </div>
+
+                <div class="btn-toolbar justify-content-between mt-3" role="toolbar"
+                    aria-label="Toolbar with button groups">
+                    <div class="btn-group btn-group-lg" role="group" aria-label="First group">
+                        <button type="submit" class="btn btn-success" id="itmSave">Save</button>
+                        <button type="submit" class="btn btn-warning">Update</button>
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="btn btn-secondary p-2" id="itmClear">Clear</button>
+                    </div>
+                </div>
+                <!-- </form> -->
+            </section>
+
+            <section class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 card">
+                <table class="table  table-hover mt-3" id="itmTable">
+                    <thead>
+                        <tr class="bg-primary text-light">
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-light" id="itmtblBody">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Rice</td>
+                            <td>200.00</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Dhal</td>
+                            <td>150.00</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Wheat</td>
+                            <td>300.00</td>
+                            <td>10</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+
+        </section>
+    </section>
+
+    <section id="orders">
+        <section class="container-fluid mt-5">
+            <form>
+                <div class="form-row">
+                    <div class="col-12 col-sm-12 col-md-3">
+                        <input type="text" class="form-control" placeholder="Order ID">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-row mt-3">
+                    <div class="form-group col-md-3">
+                        <label for="cusID">Customer ID</label>
+                        <input type="text" class="form-control" id="cusID">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="cusName">Customer name</label>
+                        <input type="text" class="form-control" id="cusName">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-row mt-3">
+                    <div class="form-group col-md-3">
+                        <label for="itemID">Item ID</label>
+                        <input type="text" class="form-control" id="itemID">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="itemName">Item name</label>
+                        <input type="text" class="form-control" id="itemName">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="ordprice">Price</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">LKR</div>
+                            </div>
+                            <input type="number" class="form-control" id="ordprice">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="qtyOnHand">QTY onhand</label>
+                        <input type="number" class="form-control" id="qtyOnHand">
+                    </div>
+                    <div class="form-group col-md-2 mt-2">
+                        <br>
+                        <button type="submit" class="btn btn-outline-primary">Search</button>
+                    </div>
+                </div>
+                <div class="form-row mt-3">
+                    <div class="form-group col-md-3">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" class="form-control" id="quantity">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="total">Total</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">LKR</div>
+                            </div>
+                            <input type="number" class="form-control bg-danger text-white" id="total">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-2 mt-2">
+                        <br>
+                        <button type="submit" class="btn btn-outline-success">Add to cart</button>
+                    </div>
+                </div>
+                <div class="d-flex flex-row-reverse">
+                    <button type="button" class="btn bg-success text-white btn-lg p-2">Place order</button>
+                </div>
+            </form>
+
+            <table class="table  table-hover mt-5">
+                <thead>
+                    <tr class="bg-primary text-light">
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Manage</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-light">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Wheat</td>
+                        <td>200.00</td>
+                        <td>30</td>
+                        <td>30</td>
+                        <td style="width: 10%" class="text-center"><button type="button"
+                                class="btn btn-outline-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Rice</td>
+                        <td>150.00</td>
+                        <td>5</td>
+                        <td>30</td>
+                        <td style="width: 10%" class="text-center"><button type="button"
+                                class="btn btn-outline-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Dhal</td>
+                        <td>300.00</td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td style="width: 10%" class="text-center"><button type="button"
+                                class="btn btn-outline-danger">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+    <section id="dashboard">
+        <section class="mt-5 container-fluid card bg-light col-10">
+            <div class="row mt-4">
+                <div class=" col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-primary font-weight-bold">Earning Monthly</h5>
+                            <p class="card-text text-center font-weight-bold text-dark">LKR. 400,000.00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-success font-weight-bold">Earning Daily</h5>
+                            <p class="card-text text-center text-dark font-weight-bold">LKR. 4000.00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-info font-weight-bold">Orders</h5>
+                            <p class="card-text text-center text-dark font-weight-bold">56
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-danger font-weight-bold">Pending</h5>
+                            <p class="card-text text-center text-dark font-weight-bold">4
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="row col-12" style="justify-content: center;">
+            <section class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                <section class="mt-5 container-fluid card bg-primary col-11">
+                    <div class="row mt-4 mb-4">
+                        <div class=" col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-primary font-weight-bold">Earning Monthly
+                                    </h5>
+                                    <p class="card-text text-center font-weight-bold text-dark">LKR. 400,000.00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-success font-weight-bold">Earning Daily</h5>
+                                    <p class="card-text text-center text-dark font-weight-bold">LKR. 4000.00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                <section class="mt-5 container-fluid card bg-warning col-11">
+                    <div class="row mt-4 mb-4">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-info font-weight-bold">Orders</h5>
+                                    <p class="card-text text-center text-dark font-weight-bold">56
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-danger font-weight-bold">Pending</h5>
+                                    <p class="card-text text-center text-dark font-weight-bold">4
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/customer.js"></script>
+    <script src="js/item.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

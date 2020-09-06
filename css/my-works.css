@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Muli", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    background: rgb(238, 238, 238);
+}
+::selection {
+    color: #ffffff;
+    background: #444444;
+}
+::-moz-selection { /* Code for Firefox */
+    color: #ffffff;
+    background: #444444;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /*margin-right: -15px;*/
+    /*margin-left: -15px*/
+}
+
+.align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+.aside-anim{
+    transform: translateY(4em);
+    transition: transform 0.5s .20s cubic-bezier(0,1,.3,1), opacity .1s .20s ease-in;
+    will-change: transform, opacity;
+}
+/*start background*/
+.bg-lines {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0.06;
+    top: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+.bg-lines > svg {
+    width: 100%;
+    height: 100%;
+}
+.bg-lines > svg > line {
+    stroke-width: 1;
+    stroke: rgb(0,0,0);
+}
+/*end background*/
+
+/*start header*/
+
+header {
+    opacity: 1;
+    width: 100%;
+    height: 120px;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 100;
+    transition: all 0.5s cubic-bezier(0.68, 0, 0.265, 1) 0s;
+}
+#header-area {
+    box-sizing: border-box;
+    padding: 0 130px;
+    height: 20px;
+    margin: 80px auto;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 20;
+    transition: all 0.2s ease-in-out;
+}
+#logo {
+    position: relative;
+    display: inline-block;
+    pointer-events: auto;
+    z-index: 10;
+}
+#logo a {
+    display: block;
+}
+#logo img {
+    display: block;
+    height: 40px;
+    width: auto;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+#logo-black {
+    opacity: 1;
+}
+#logo-white {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.menu-info {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    position: absolute;
+    top: 0;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+#burger {
+    width: 100px;
+    height: 100px;
+    float: right;
+    top: -30px;
+    right: -30px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#burger-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 32px;
+    box-sizing: border-box;
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.2s ease-in-out;
+}
+#burger-menu {
+    width: 14px;
+    height: 22px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    pointer-events: none;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#burger-menu>span {
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    opacity: 1;
+    right: 0;
+    transform: rotate(0deg);
+    transition: 0.2s ease-in-out;
+}
+#burger-menu span:nth-child(1) {
+    top: 8px;
+}
+#burger-menu span:nth-child(2) {
+    top: 14px;
+}
+/*end header*/
+
+
+/*content start*/
+#image-holder{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#image-holder > div > img{
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+/*content end*/
+
+
+/*start footer*/
+footer{
+    padding: 70px 20px 50px 20px;
+    width: 100%;
+    height: 200px;
+    z-index: 5;
+    box-sizing: border-box;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    pointer-events: none;
+}
+#back{
+    position: fixed;
+    box-sizing: border-box;
+    left: 120px;
+    bottom: 80px;
+    height: 60px;
+    width: 60px;
+    z-index: 10;
+    pointer-events: initial;
+    opacity: 0.4;
+    transform: scale(0.7);
+    border: 2px solid black;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+#back:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+#next{
+    position: fixed;
+    right: 120px;
+    bottom: 80px;
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    pointer-events: initial;
+    z-index: 10;
+    opacity: 0.4;
+    transform: scale(0.7);
+    border: 2px solid black;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+#next:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+#footer-container  > div > i{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+/*end footer*/

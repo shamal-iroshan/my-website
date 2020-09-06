@@ -1,0 +1,12 @@
+.nav-item{
+    cursor: pointer;
+}
+#orders{
+    display: none;
+}
+#items{
+    display: none;
+}
+#customers{
+    display: none;
+}
